@@ -4,13 +4,17 @@ html,body {
 }
 
 body.login-page {
-	background-color: #737a81;
+	background-color: #E5E5E5;
 	font-size: 14px;
 }
 
+h4{
+	text-align:center;
+}
+
 .login-page .brand {
-	width: 80px;
-	height: 110px;
+	width: 100px;
+	height: 130px;
 	overflow: hidden;
 	margin: 20px auto;
 	position: relative;

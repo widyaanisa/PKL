@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<link rel="stylesheet" type="text/css" href="css/dashboard.css">
 	<link rel="icon" type="image/png" href="img/logo 2.png">
 </head>
 
@@ -37,7 +38,8 @@
 							</div>
 
 							<div class="form-group">
-								<a class="btn btn-primary btn-block" type="submit" value="ForgotPassword" href="login.html">
+								<a class="btn btn-primary btn-block" type="submit" value="ForgotPassword"
+									href="login.html" data-toggle="modal" data-target="#forgotmodal">
 									FORGOT PASSWORD
 								</a>
 							</div>
@@ -48,6 +50,27 @@
 		</div>
 	</div>
 
+	<div class="modal fade" id="forgotmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">SMS Code Sent</h5>
+					<button class="close" type="button" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+				</div>
+				<div class="modal-body">We sent a login code to Your Phone Number to get you back into your account.
+				</div>
+				<div class="modal-footer">
+					<a class="btn btn-primary" href="halamanutama.html">OK</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

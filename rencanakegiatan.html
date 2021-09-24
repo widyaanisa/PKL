@@ -10,33 +10,27 @@
 
     <title>Rencana Kegiatan</title>
 
-    <!-- Custom fonts for this template-->
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
         href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
         rel="stylesheet">
 
-    <!-- Custom styles for this template-->
     <link href="css/dashboard.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="img/logo 1.png">
 </head>
 
 <body id="page-top">
-
-    <!-- Page Wrapper -->
     <div id="wrapper">
 
-        <!-- Sidebar -->
         <ul class="navbar-nav bg-white sidebar sidebar-dark accordion" id="accordionSidebar">
 
-            <!-- Sidebar - Brand -->
             <div class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-icon">
                     <img src="img/logo 1.png" alt="logo">
                 </div>
                 <div class="sidebar-brand-text">Dashboard</div>
             </div>
-            
+
             <hr class="sidebar-divider my-0">
 
             <li class="nav-item active">
@@ -51,7 +45,8 @@
                     <i class="fas fa-fw fa-file-signature text-primary"></i>
                     <span>Report</span>
                 </a>
-                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo"
+                    data-parent="#accordionSidebar">
                     <div class="bg-gradient-primary py-2 collapse-inner rounded">
                         <a class="collapse-item text-white" href="rencanakegiatan.html">Rencana Kegiatan</a>
                         <a class="collapse-item text-white" href="pelaksanaan.html">Pelaksanaan</a>
@@ -59,50 +54,37 @@
                 </div>
             </li>
 
-
-            <!-- Nav Item - Charts -->
             <li class="nav-item">
                 <a class="nav-link text-primary" href="datamaster.html">
                     <i class="fas fa-fw fa-database text-primary"></i>
                     <span>Data Master</span></a>
             </li>
 
-            <!-- Divider -->
             <hr class="sidebar-divider d-none d-md-block">
 
-            <!-- Sidebar Toggler (Sidebar) -->
             <div class="text-center d-none d-md-inline">
                 <button class="rounded-circle border-0" id="sidebarToggle"></button>
             </div>
         </ul>
-        <!-- End of Sidebar -->
 
-        <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
 
-            <!-- Main Content -->
             <div id="content">
-
-                <!-- Topbar -->
                 <nav class="navbar navbar-expand navbar-light bg-primary topbar mb-4 static-top shadow">
 
-                    <!-- Sidebar Toggle (Topbar) -->
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
                         <i class="fa fa-bars"></i>
                     </button>
 
-                    <!-- Topbar Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <div class="topbar-divider d-none d-sm-block"></div>
 
-                        <!-- Nav Item - User Information -->
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span class="mr-2 d-none d-lg-inline text-white small">Name</span>
                                 <img class="img-profile rounded-circle" src="img/user.png">
                             </a>
-                            <!-- Dropdown - User Information -->
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                 aria-labelledby="userDropdown">
                                 <a class="dropdown-item" href="profil.html">
@@ -124,87 +106,226 @@
                     </ul>
 
                 </nav>
-                <!-- End of Topbar -->
 
-                <!-- Begin Page Content -->
                 <div class="container-fluid">
-
-                    <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-primary">Rencana Kegiatan</h1>
                     </div>
 
-                    <!-- Content Row -->
-
-                    
                     <div class="card shadow mb-4">
-                        <!-- Card Header - Dropdown -->
-                        <div
-                            class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                            <h6 class="m-0 font-weight-bold text-primary">Data Kegiatan</h6>
-                            <div class="dropdown no-arrow">
-                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                                </a>
-                                <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
-                                    aria-labelledby="dropdownMenuLink">
-                                    <div class="dropdown-header">Dropdown Header:</div>
-                                    <a class="dropdown-item" href="#">Action</a>
-                                    <a class="dropdown-item" href="#">Another action</a>
-                                    <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="#">Something else here</a>
-                                </div>
-                            </div>
+                        <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                            <h6 class="m-0 font-weight-bold text-primary">Data Rencana Kegiatan</h6>
                         </div>
-                        <!-- Card Body -->
                         <div class="card-body">
-                            <!--isi-->
-                        </div>
-                    </div>
-                    <!-- End of Page Wrapper -->
-
-                    <!-- Scroll to Top Button-->
-                    <a class="scroll-to-top rounded" href="#page-top">
-                        <i class="fas fa-angle-up"></i>
-                    </a>
-
-                    <!-- Logout Modal-->
-                    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog"
-                        aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">×</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">Select "Logout" below if you are ready to end your current
-                                    session.</div>
-                                <div class="modal-footer">
-                                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                                    <a class="btn btn-primary" href="halamanutama.html">Logout</a>
+                            <div class="table-responsive">
+                                <div class="table-wrapper">
+                                    <div class="table-title">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <button type="button" class="btn btn-info add-new"><i
+                                                        class="fa fa-plus"></i> Add New</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th width="50px">No.</th>
+                                                <th>Sprin No.</th>
+                                                <th>Tentang</th>
+                                                <th>Personil</th>
+                                                <th>Giat</th>
+                                                <th>Pelaporan</th>
+                                                <th> </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>01</td>
+                                                <td>2819</td>
+                                                <td>Kegiatan 1</td>
+                                                <td>Personil 1</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>
+                                                    <a class="add" title="Add" data-toggle="tooltip"><i
+                                                            class="fas fa-edit"></i></a>
+                                                    <a class="edit" title="Edit" data-toggle="tooltip"><i
+                                                            class="fas fa-edit"></i></a>
+                                                    <a class="delete" title="Delete" data-toggle="tooltip"><i
+                                                            class="fas fa-trash"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>02</td>
+                                                <td>2820</td>
+                                                <td>Kegiatan 2</td>
+                                                <td>Personil 2</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>
+                                                    <a class="add" title="Add" data-toggle="tooltip"><i
+                                                            class="fas fa-edit"></i></a>
+                                                    <a class="edit" title="Edit" data-toggle="tooltip"><i
+                                                            class="fas fa-edit"></i></a>
+                                                    <a class="delete" title="Delete" data-toggle="tooltip"><i
+                                                            class="fas fa-trash"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>03</td>
+                                                <td>2821</td>
+                                                <td>Kegiatan 3</td>
+                                                <td>Personil 3</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>
+                                                    <a class="add" title="Add" data-toggle="tooltip"><i
+                                                            class="fas fa-edit"></i></a>
+                                                    <a class="edit" title="Edit" data-toggle="tooltip"><i
+                                                            class="fas fa-edit"></i></a>
+                                                    <a class="delete" title="Delete" data-toggle="tooltip"><i
+                                                            class="fas fa-trash"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>03</td>
+                                                <td>2821</td>
+                                                <td>Kegiatan 3</td>
+                                                <td>Nur Widya Anisa Muslim</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>
+                                                    <a class="add" title="Add" data-toggle="tooltip"><i
+                                                            class="fas fa-edit"></i></a>
+                                                    <a class="edit" title="Edit" data-toggle="tooltip"><i
+                                                            class="fas fa-edit"></i></a>
+                                                    <a class="delete" title="Delete" data-toggle="tooltip"><i
+                                                            class="fas fa-trash"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>03</td>
+                                                <td>2821</td>
+                                                <td>Kegiatan 3</td>
+                                                <td>Personil 3</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>
+                                                    <a class="add" title="Add" data-toggle="tooltip"><i
+                                                            class="fas fa-edit"></i></a>
+                                                    <a class="edit" title="Edit" data-toggle="tooltip"><i
+                                                            class="fas fa-edit"></i></a>
+                                                    <a class="delete" title="Delete" data-toggle="tooltip"><i
+                                                            class="fas fa-trash"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>03</td>
+                                                <td>2821</td>
+                                                <td>Kegiatan 3</td>
+                                                <td>Personil 3</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>
+                                                    <a class="add" title="Add" data-toggle="tooltip"><i
+                                                            class="fas fa-edit"></i></a>
+                                                    <a class="edit" title="Edit" data-toggle="tooltip"><i
+                                                            class="fas fa-edit"></i></a>
+                                                    <a class="delete" title="Delete" data-toggle="tooltip"><i
+                                                            class="fas fa-trash"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>03</td>
+                                                <td>2821</td>
+                                                <td>Kegiatan 3</td>
+                                                <td>Personil 3</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>
+                                                    <a class="add" title="Add" data-toggle="tooltip"><i
+                                                            class="fas fa-edit"></i></a>
+                                                    <a class="edit" title="Edit" data-toggle="tooltip"><i
+                                                            class="fas fa-edit"></i></a>
+                                                    <a class="delete" title="Delete" data-toggle="tooltip"><i
+                                                            class="fas fa-trash"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>03</td>
+                                                <td>2821</td>
+                                                <td>Kegiatan 3</td>
+                                                <td>Personil 3</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>
+                                                    <a class="add" title="Add" data-toggle="tooltip"><i
+                                                            class="fas fa-edit"></i></a>
+                                                    <a class="edit" title="Edit" data-toggle="tooltip"><i
+                                                            class="fas fa-edit"></i></a>
+                                                    <a class="delete" title="Delete" data-toggle="tooltip"><i
+                                                            class="fas fa-trash"></i></a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>03</td>
+                                                <td>2821</td>
+                                                <td>Kegiatan 3</td>
+                                                <td>Personil 3</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>
+                                                    <a class="add" title="Add" data-toggle="tooltip"><i
+                                                            class="fas fa-edit"></i></a>
+                                                    <a class="edit" title="Edit" data-toggle="tooltip"><i
+                                                            class="fas fa-edit"></i></a>
+                                                    <a class="delete" title="Delete" data-toggle="tooltip"><i
+                                                            class="fas fa-trash"></i></a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <!-- Bootstrap core JavaScript-->
-                    <script src="vendor/jquery/jquery.min.js"></script>
-                    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+                <a class="scroll-to-top rounded" href="#page-top">
+                    <i class="fas fa-angle-up"></i>
+                </a>
 
-                    <!-- Core plugin JavaScript-->
-                    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+                <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">Select "Logout" below if you are ready to end your current
+                                session.</div>
+                            <div class="modal-footer">
+                                <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                                <a class="btn btn-primary" href="halamanutama.html">Logout</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                    <!-- Custom scripts for all pages-->
-                    <script src="js/sistem.js"></script>
+                <script src="vendor/jquery/jquery.min.js"></script>
+                <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-                    <!-- Page level plugins -->
-                    <script src="vendor/chart.js/Chart.min.js"></script>
+                <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-                    <!-- Page level custom scripts -->
-                    <script src="js/demo/chart-area-demo.js"></script>
+                <script src="js/sistem.js"></script>
+
+                <script src="vendor/chart.js/Chart.min.js"></script>
+
+                <script src="js/demo/chart-area-demo.js"></script>
 </body>
 
 </html>

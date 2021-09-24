@@ -12,18 +12,18 @@ html, body {
   
   .main-button a{
     display: inline-block;
-    font-size: 15px;
+    font-size: 18px;
     padding: 12px 40px;
-    background-color: rgb(94, 94, 252);
-    color: #fff;
+    background-color: white;
+    color: blue;
     text-align: center;
-    font-weight: 400;
+    font-weight: 700;
     transition: all .3s;
     border-radius:7px;
   }
   
   .main-button a:hover {
-    background-color: rgba(12, 33, 75, 0.76);
+    background-color: rgba(218, 218, 218, 0.897);
   }
   
   .main-banner {

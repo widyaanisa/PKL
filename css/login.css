@@ -16,7 +16,8 @@ h4{
 	width: 90px;
 	height: 120px;
 	overflow: hidden;
-	margin: 30px auto;
+	margin: 40px auto;
+	margin-bottom: 10px;
 	position: relative;
 	z-index: 1;
 }

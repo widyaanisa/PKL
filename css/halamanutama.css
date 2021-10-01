@@ -10,20 +10,19 @@ html, body {
       padding: 0;
   }
   
-  .main-button a{
+  .btn.btn-block {
     display: inline-block;
     font-size: 18px;
-    padding: 12px 40px;
     background-color: white;
     color: blue;
     text-align: center;
     font-weight: 700;
-    transition: all .3s;
     border-radius:7px;
+    padding: 10px;
   }
   
-  .main-button a:hover {
-    background-color: rgba(218, 218, 218, 0.897);
+ .btn.btn-block {
+    width: 130px;
   }
   
   .main-banner {
@@ -45,7 +44,7 @@ html, body {
   
   .video-overlay {
       position: absolute;
-      background-color: rgba(6, 45, 94, 0.8);
+      background-color: rgba(128, 128, 128, 0.719);
       top: 0;
       left: 0;
       bottom: 0;
@@ -83,7 +82,7 @@ html, body {
   
   .main-banner .caption h2 em {
     font-style: normal;
-    color: rgba(50, 123, 212, 0.8);
+    color: blue;
     font-weight: 700;
   }
   

@@ -11439,7 +11439,7 @@ table.table td .add {
       text-align: center;
   }
 
-  .alert-box span {
+.alert-box span {
     font-weight:bold;
     text-transform:uppercase;
   

@@ -88,10 +88,11 @@
                     <ul class="navbar-nav ml-auto">
                         <div class="topbar-divider d-none d-sm-block"></div>
 
+                        
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-white small">Name</span>
+                                <span class="mr-2 d-none d-lg-inline text-white small">Admin</span>
                                 <img class="img-profile rounded-circle" src="../img/user.png">
                             </a>
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -100,9 +101,9 @@
                                     <i class="fas fa-user fa-sm fa-fw mr-2"></i>
                                     Profile
                                 </a>
-                                <a class="dropdown-item" href="settingadmin.html">
-                                    <i class="fas fa-cogs fa-sm fa-fw mr-2"></i>
-                                    Settings
+                                <a class="dropdown-item" href="changepasswordadmin.html">
+                                    <i class="fas fa-key fa-sm fa-fw mr-2"></i>
+                                    Change Password
                                 </a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
@@ -157,20 +158,31 @@
                                     <table class="table table-bordered">
                                         <thead>
                                             <tr>
-                                                <th width="50px">No.</th>
+                                                <th width="100px">Pilih Data</th>
+                                                <th width="55px">No.</th>
                                                 <th>Sprin No.</th>
                                                 <th>Tentang</th>
-                                                <th width="50px">Pilih</th>
+                                                
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
+                                                <td><input type="checkbox" id="pilihan" name="pilihan" value="pilih">
+                                                    <label for="pilih1"></label>
+                                                </td>
                                                 <td>01</td>
                                                 <td>2819</td>
                                                 <td>Kegiatan 1</td>
+                                               
+                                            </tr>
+                                            <tr>
                                                 <td><input type="checkbox" id="pilihan" name="pilihan" value="pilih">
-                                                    <label for="pilih1"></label><br>
+                                                    <label for="pilih1"></label>
                                                 </td>
+                                                <td>02</td>
+                                                <td>2820</td>
+                                                <td>Kegiatan 2</td>
+                                               
                                             </tr>
                                         </tbody>
                                     </table>

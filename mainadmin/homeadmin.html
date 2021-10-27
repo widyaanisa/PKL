@@ -91,7 +91,7 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-white small">Name</span>
+                                <span class="mr-2 d-none d-lg-inline text-white small">Admin</span>
                                 <img class="img-profile rounded-circle" src="../img/user.png">
                             </a>
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -100,9 +100,9 @@
                                     <i class="fas fa-user fa-sm fa-fw mr-2"></i>
                                     Profile
                                 </a>
-                                <a class="dropdown-item" href="settingadmin.html">
-                                    <i class="fas fa-cogs fa-sm fa-fw mr-2"></i>
-                                    Settings
+                                <a class="dropdown-item" href="changepasswordadmin.html">
+                                    <i class="fas fa-key fa-sm fa-fw mr-2"></i>
+                                    Change Password
                                 </a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
@@ -145,17 +145,24 @@
                                 </div>
               
                                 <div class="card-body">
-                                    <div class="chart-pie pt-4 pb-2">
-                                        <canvas id="myPieChart"></canvas>
-                                    </div>
-                                    <div class="mt-4 text-center small">
-                                        <span class="mr-2">
-                                            <i class="fas fa-circle text-warning"></i> belum terlaksana
-                                        </span>
-                                        <span class="mr-2">
-                                            <i class="fas fa-circle text-success"></i> Sudah terlaksana
-                                        </span>
-                                    </div>
+                                    <div class="table-responsive">
+                                        <div class="chart-pie pb-2">
+                                            <div class="alert-box alertterlaksana"><span>Kegiatan 1</div>
+                                            <div class="alert-box alertbelumterlaksana"><span>Kegiatan 2</div>
+                                                <div class="alert-box alertterlaksana"><span>Kegiatan 3</div>
+                                                    <div class="alert-box alertbelumterlaksana"><span>Kegiatan 4</div>
+                                                            <div class="alert-box alertbelumterlaksana"><span>Kegiatan 5</div>
+                                                                    <div class="alert-box alertbelumterlaksana"><span>Kegiatan 6</div>
+                                        </div>
+                                        </div>
+                                        <div class="mt-4 text-center small">
+                                            <span class="mr-2">
+                                                <i class="fas fa-circle text-warning"></i> Belum terlaksana
+                                            </span>
+                                            <span class="mr-2">
+                                                <i class="fas fa-circle text-success"></i> Sudah terlaksana
+                                            </span>
+                                        </div>
                                 </div>
                             </div>
                         </div>

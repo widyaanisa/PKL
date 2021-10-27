@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Profile Admin</title>
+    <title>Edit Profile Admin</title>
 
     <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
@@ -31,7 +31,7 @@
                 </div>
                 <div class="sidebar-brand-text">Dashboard</div>
             </div>
-            
+
             <hr class="sidebar-divider my-0">
 
             <li class="nav-item">
@@ -86,7 +86,6 @@
                     <ul class="navbar-nav ml-auto">
                         <div class="topbar-divider d-none d-sm-block"></div>
 
-                        
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -115,25 +114,32 @@
 
                 </nav>
                 <div class="container-fluid">
+
                     <div class="card shadow mb-4">
                         <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                            <h6 class="m-0 font-weight-bold text-primary">Profile Admin</h6>
-                            <div class="dropdown no-arrow"> 
-                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" 
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-                                    <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i> 
-                                </a> 
-                                <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" 
-                                    aria-labelledby="dropdownMenuLink">  
-                                    <a class="dropdown-item" href="editprofiladmin.html"><i class="fas fa-user-edit fa-sm fa-fw mr-2"></i>Edit Profile</a>  
-                                </div> 
-                            </div> 
+                            <h6 class="m-0 font-weight-bold text-primary">Edit Profile Admin</h6>
+                            <div class="dropdown no-arrow">
+                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
+                                    aria-labelledby="dropdownMenuLink">
+                                    <a class="dropdown-item" href="editprofil.html"><i
+                                            class="fas fa-user-edit fa-sm fa-fw mr-2"></i>Edit Profile</a>
+                                </div>
+                            </div>
                         </div>
+
                         <div class="card-body">
                             <div class="row" style="height:100%">
                                 <div class="col-md-3">
                                     <div class="profile-img">
                                         <img class="rounded-circle mt-3" src="../img/photoprofil2.jpg" alt=""/>
+                                        <div class="file btn btn-lg btn-primary">
+                                            Change Photo
+                                            <input type="file" name="file"/>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -142,19 +148,26 @@
                                         <form>
                                             <div class="form-group">
                                                 <label for=fullName>Nama Lengkap</label>
-                                                <input type="text" class="form-control" id="fullName" readonly value="Widya Anisa">
+                                                <input type="text" class="form-control" id="fullName" value="Widya Anisa">
                                             </div>
                                             <div class="form-group">
                                                 <label for=email>Email</label>
-                                                <input type="email" class="form-control" id="email"  readonly value="Admin1@gmail.com">
+                                                <input type="email" class="form-control" id="email" value="Admin1@gmail.com">
                                             </div>
                                             <div class="form-group">
                                                 <label for=jabatan>Jabatan</label>
-                                                <input type="text" class="form-control" id="jabatan" readonly value="Admin">
+                                                <input type="text" class="form-control" id="jabatan" value="Admin">
                                             </div>
                                             <div class="form-group ">
                                                 <label for=tanggallahir>Tanggal Lahir</label>
-                                                <input type="date" class="form-control" id="tanggallahir" readonly value="1999-07-05">
+                                                <input type="date" class="form-control" id="tanggallahir" value="1999-07-05">
+                                            </div>
+                                            <div class="row mt-3 mb-3">
+
+                                                <div class="col">
+                                                    <button type="button" class="btn btn-primary btn-block">Save
+                                                        Changes</button>
+                                                </div>
                                             </div>
                                         </form>
                                     </div>
@@ -162,40 +175,40 @@
                             </div>
                         </div>
 
-                    <a class="scroll-to-top rounded" href="#page-top">
-                        <i class="fas fa-angle-up"></i>
-                    </a>
+        <a class="scroll-to-top rounded" href="#page-top">
+            <i class="fas fa-angle-up"></i>
+        </a>
 
-                    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog"
-                        aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">×</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">Select "Logout" below if you are ready to end your current
-                                    session.</div>
-                                <div class="modal-footer">
-                                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                                    <a class="btn btn-primary" href="../halamanutama.html">Logout</a>
-                                </div>
-                            </div>
-                        </div>
+        <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                        <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
                     </div>
+                    <div class="modal-body">Select "Logout" below if you are ready to end your current
+                        session.</div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                        <a class="btn btn-primary" href="../halamanutama.html">Logout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                    <script src="../vendor/jquery/jquery.min.js"></script>
-                    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="../vendor/jquery/jquery.min.js"></script>
+        <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-                    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+        <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
-                    <script src="../js/sistem.js"></script>
+        <script src="../js/sistem.js"></script>
 
-                    <script src="../vendor/chart.js/Chart.min.js"></script>
+        <script src="../vendor/chart.js/Chart.min.js"></script>
 
-                    <script src="../js/demo/chart-area-demo.js"></script>
+        <script src="../js/demo/chart-area-demo.js"></script>
 </body>
 
 </html>

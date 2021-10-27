@@ -88,7 +88,7 @@
                         <li class="nav-item dropdown no-arrow">
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="mr-2 d-none d-lg-inline text-white small">Name</span>
+                                <span class="mr-2 d-none d-lg-inline text-white small">Admin</span>
                                 <img class="img-profile rounded-circle" src="../img/user.png">
                             </a>
                             <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
@@ -97,9 +97,9 @@
                                     <i class="fas fa-user fa-sm fa-fw mr-2"></i>
                                     Profile
                                 </a>
-                                <a class="dropdown-item" href="settingadmin.html">
-                                    <i class="fas fa-cogs fa-sm fa-fw mr-2"></i>
-                                    Settings
+                                <a class="dropdown-item" href="changepasswordadmin.html">
+                                    <i class="fas fa-key fa-sm fa-fw mr-2"></i>
+                                    Change Password
                                 </a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
@@ -128,20 +128,21 @@
                                     <div class="table-title">
                                         <div class="row">
                                             <div class="col-sm-12">
-                                                <button type="button" class="btn btn-info add-new"><i
-                                                        class="fa fa-plus"></i> Add New</button>
+                                                <a class="btn btn-info add-new" href="formdatarencanakegiatan.html"><i class="fa fa-plus"></i> Add New</a>
                                             </div>
                                         </div>
                                     </div>
                                     <table class="table table-bordered">
                                         <thead>
                                             <tr>
-                                                <th width="50px">No.</th>
+                                                <th width="55px">No.</th>
                                                 <th>Sprin No.</th>
                                                 <th>Tentang</th>
                                                 <th>Personil</th>
-                                                <th>Giat</th>
+                                                <th>Kegiatan</th>
                                                 <th>Pelaporan</th>
+                                                <th>Perwaktu</th>
+                                                <th>Outcome</th>
                                                 <th> </th>
                                             </tr>
                                         </thead>
@@ -153,141 +154,13 @@
                                                 <td>Personil 1</td>
                                                 <td>-</td>
                                                 <td>-</td>
-                                                <td>
-                                                    <a class="add" title="Add" data-toggle="tooltip"><i
-                                                            class="fas fa-edit"></i></a>
-                                                    <a class="edit" title="Edit" data-toggle="tooltip"><i
-                                                            class="fas fa-edit"></i></a>
-                                                    <a class="delete" title="Delete" data-toggle="tooltip"><i
-                                                            class="fas fa-trash"></i></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>02</td>
-                                                <td>2820</td>
-                                                <td>Kegiatan 2</td>
-                                                <td>Personil 2</td>
                                                 <td>-</td>
                                                 <td>-</td>
                                                 <td>
-                                                    <a class="add" title="Add" data-toggle="tooltip"><i
-                                                            class="fas fa-edit"></i></a>
-                                                    <a class="edit" title="Edit" data-toggle="tooltip"><i
-                                                            class="fas fa-edit"></i></a>
-                                                    <a class="delete" title="Delete" data-toggle="tooltip"><i
-                                                            class="fas fa-trash"></i></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>03</td>
-                                                <td>2821</td>
-                                                <td>Kegiatan 3</td>
-                                                <td>Personil 3</td>
-                                                <td>-</td>
-                                                <td>-</td>
-                                                <td>
-                                                    <a class="add" title="Add" data-toggle="tooltip"><i
-                                                            class="fas fa-edit"></i></a>
-                                                    <a class="edit" title="Edit" data-toggle="tooltip"><i
-                                                            class="fas fa-edit"></i></a>
-                                                    <a class="delete" title="Delete" data-toggle="tooltip"><i
-                                                            class="fas fa-trash"></i></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>03</td>
-                                                <td>2821</td>
-                                                <td>Kegiatan 3</td>
-                                                <td>Nur Widya Anisa Muslim</td>
-                                                <td>-</td>
-                                                <td>-</td>
-                                                <td>
-                                                    <a class="add" title="Add" data-toggle="tooltip"><i
-                                                            class="fas fa-edit"></i></a>
-                                                    <a class="edit" title="Edit" data-toggle="tooltip"><i
-                                                            class="fas fa-edit"></i></a>
-                                                    <a class="delete" title="Delete" data-toggle="tooltip"><i
-                                                            class="fas fa-trash"></i></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>03</td>
-                                                <td>2821</td>
-                                                <td>Kegiatan 3</td>
-                                                <td>Personil 3</td>
-                                                <td>-</td>
-                                                <td>-</td>
-                                                <td>
-                                                    <a class="add" title="Add" data-toggle="tooltip"><i
-                                                            class="fas fa-edit"></i></a>
-                                                    <a class="edit" title="Edit" data-toggle="tooltip"><i
-                                                            class="fas fa-edit"></i></a>
-                                                    <a class="delete" title="Delete" data-toggle="tooltip"><i
-                                                            class="fas fa-trash"></i></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>03</td>
-                                                <td>2821</td>
-                                                <td>Kegiatan 3</td>
-                                                <td>Personil 3</td>
-                                                <td>-</td>
-                                                <td>-</td>
-                                                <td>
-                                                    <a class="add" title="Add" data-toggle="tooltip"><i
-                                                            class="fas fa-edit"></i></a>
-                                                    <a class="edit" title="Edit" data-toggle="tooltip"><i
-                                                            class="fas fa-edit"></i></a>
-                                                    <a class="delete" title="Delete" data-toggle="tooltip"><i
-                                                            class="fas fa-trash"></i></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>03</td>
-                                                <td>2821</td>
-                                                <td>Kegiatan 3</td>
-                                                <td>Personil 3</td>
-                                                <td>-</td>
-                                                <td>-</td>
-                                                <td>
-                                                    <a class="add" title="Add" data-toggle="tooltip"><i
-                                                            class="fas fa-edit"></i></a>
-                                                    <a class="edit" title="Edit" data-toggle="tooltip"><i
-                                                            class="fas fa-edit"></i></a>
-                                                    <a class="delete" title="Delete" data-toggle="tooltip"><i
-                                                            class="fas fa-trash"></i></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>03</td>
-                                                <td>2821</td>
-                                                <td>Kegiatan 3</td>
-                                                <td>Personil 3</td>
-                                                <td>-</td>
-                                                <td>-</td>
-                                                <td>
-                                                    <a class="add" title="Add" data-toggle="tooltip"><i
-                                                            class="fas fa-edit"></i></a>
-                                                    <a class="edit" title="Edit" data-toggle="tooltip"><i
-                                                            class="fas fa-edit"></i></a>
-                                                    <a class="delete" title="Delete" data-toggle="tooltip"><i
-                                                            class="fas fa-trash"></i></a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>03</td>
-                                                <td>2821</td>
-                                                <td>Kegiatan 3</td>
-                                                <td>Personil 3</td>
-                                                <td>-</td>
-                                                <td>-</td>
-                                                <td>
-                                                    <a class="add" title="Add" data-toggle="tooltip"><i
-                                                            class="fas fa-edit"></i></a>
-                                                    <a class="edit" title="Edit" data-toggle="tooltip"><i
-                                                            class="fas fa-edit"></i></a>
-                                                    <a class="delete" title="Delete" data-toggle="tooltip"><i
-                                                            class="fas fa-trash"></i></a>
+                                                    <a class="add" title="Add" data-toggle="tooltip"><i class="fas fa-edit"></i></a>
+                                                    <a class="view" title="View" data-toggle="tooltip"><i class="fas fa-eye"></i></a>
+                                                    <a class="edit" title="Edit" data-toggle="tooltip"><i class="fas fa-edit"></i></a>
+                                                    <a class="delete" title="Delete" data-toggle="tooltip"><i class="fas fa-trash"></i></a>
                                                 </td>
                                             </tr>
                                         </tbody>

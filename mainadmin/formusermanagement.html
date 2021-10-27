@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Profile Admin</title>
+    <title>Form User Management</title>
 
     <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
@@ -46,7 +46,8 @@
                     <i class="fas fa-fw fa-file-signature text-primary"></i>
                     <span>Report</span>
                 </a>
-                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                    data-parent="#accordionSidebar">
                     <div class="bg-gradient-primary py-2 collapse-inner rounded">
                         <a class="collapse-item text-white" href="rencanakegiatanadmin.html">Rencana Kegiatan</a>
                         <a class="collapse-item text-white" href="pelaksanaanadmin.html">Pelaksanaan</a>
@@ -60,7 +61,7 @@
                     <span>Data Master</span></a>
             </li>
 
-            <li class="nav-item">
+            <li class="nav-item active">
                 <a class="nav-link text-primary" href="usermanagement.html">
                     <i class="fas fa-fw fa-list text-primary"></i>
                     <span>User Management</span></a>
@@ -115,53 +116,42 @@
 
                 </nav>
                 <div class="container-fluid">
+
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-primary">Form User Management</h1>
+                    </div>
+
+
                     <div class="card shadow mb-4">
-                        <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
-                            <h6 class="m-0 font-weight-bold text-primary">Profile Admin</h6>
-                            <div class="dropdown no-arrow"> 
-                                <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" 
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-                                    <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i> 
-                                </a> 
-                                <div class="dropdown-menu dropdown-menu-right shadow animated--fade-in" 
-                                    aria-labelledby="dropdownMenuLink">  
-                                    <a class="dropdown-item" href="editprofiladmin.html"><i class="fas fa-user-edit fa-sm fa-fw mr-2"></i>Edit Profile</a>  
-                                </div> 
-                            </div> 
-                        </div>
                         <div class="card-body">
-                            <div class="row" style="height:100%">
-                                <div class="col-md-3">
-                                    <div class="profile-img">
-                                        <img class="rounded-circle mt-3" src="../img/photoprofil2.jpg" alt=""/>
+                            <form method="POST">
+                                <div class="form-row">
+                                    <div class="name">Nama Lengkap</div>
+                                    <div class="value">
+                                        <input class="input--style-6" type="text" name="full_name">
                                     </div>
                                 </div>
-
-                                <div class="col-md-9">
-                                    <div class="container">
-                                        <form>
-                                            <div class="form-group">
-                                                <label for=fullName>Nama Lengkap</label>
-                                                <input type="text" class="form-control" id="fullName" readonly value="Widya Anisa">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for=email>Email</label>
-                                                <input type="email" class="form-control" id="email"  readonly value="Admin1@gmail.com">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for=jabatan>Jabatan</label>
-                                                <input type="text" class="form-control" id="jabatan" readonly value="Admin">
-                                            </div>
-                                            <div class="form-group ">
-                                                <label for=tanggallahir>Tanggal Lahir</label>
-                                                <input type="date" class="form-control" id="tanggallahir" readonly value="1999-07-05">
-                                            </div>
-                                        </form>
+                                <div class="form-row">
+                                    <div class="name">Tanggal Lahir</div>
+                                    <div class="value">
+                                        <input class="input--style-6" type="date" name="tanggallahir">
                                     </div>
                                 </div>
-                            </div>
+                                <div class="form-row">
+                                    <div class="name">Jabatan</div>
+                                    <div class="value">
+                                        <input class="input--style-6" type="text" name="jabatan">
+                                    </div>
+                                </div>
+                            </form>
                         </div>
-
+                        <div class="card-footer">
+                            <button class="btn btn--radius-2 btn--blue-2" type="submit">Submit</button>
+                        </div>
+                    </div>
+                        </div>
+                    </div>
+                 
                     <a class="scroll-to-top rounded" href="#page-top">
                         <i class="fas fa-angle-up"></i>
                     </a>

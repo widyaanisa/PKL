@@ -128,10 +128,12 @@
                         <div class="card-body">
                             <div class="row" style="height:100%">
                                 <div class="col-md-3">
-                                    <div href=# class="d-inline"><img
-                                            src="https://image.flaticon.com/icons/svg/236/236831.svg" width=130px
-                                            style="margin: 10px; margin-left:60px;"><br>
-                                        <p class="pl-2 mt-2"><a href="#" class="btn btn-primary btn-block">Edit Picture</a></p>
+                                    <div class="profile-img">
+                                        <img class="rounded-circle mt-3" src="../img/photoprofil.jpg" alt=""/>
+                                        <div class="file btn btn-lg btn-primary">
+                                            Change Photo
+                                            <input type="file" name="file"/>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -140,21 +142,21 @@
                                         <form>
                                             <div class="form-group">
                                                 <label for=fullName>Nama Lengkap</label>
-                                                <input type="text" class="form-control" id="fullName">
+                                                <input type="text" class="form-control" id="fullName" value="Azzam Bagaswara">
                                             </div>
                                             <div class="form-group">
                                                 <label for=email>Email</label>
-                                                <input type="email" class="form-control" id="email">
+                                                <input type="email" class="form-control" id="email" value="azzambgswr@gmail.com">
                                             </div>
                                             <div class="form-group">
-                                                <label for=pass>Password</label>
-                                                <input type="password" class="form-control" id="pass">
+                                                <label for=jabatan>Jabatan</label>
+                                                <input type="text" class="form-control" id="jabatan" value="Project Manager">
                                             </div>
                                             <div class="form-group ">
-                                                <label for=birthday>Birthday</label>
-                                                <input type="date" class="form-control" id="birthday">
+                                                <label for=tanggallahir>Tanggal Lahir</label>
+                                                <input type="date" class="form-control" id="tanggallahir" value="2000-08-28">
                                             </div>
-                                            <div class="row mt-3">
+                                            <div class="row mt-3 mb-3">
 
                                                 <div class="col">
                                                     <button type="button" class="btn btn-primary btn-block">Save
